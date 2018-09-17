@@ -1,9 +1,9 @@
-import { typeIs } from '../util'
+const util = require('../util')
 
-const isNumber = num => typeIs(num) === 'Number'
-const number = (num, defaults) => {
-  if (isNumber(num)) return num
-  return isNumber(defaults) ? defaults : 0
+const isNumber = function (num) {
+  return util.typeIs(num) === 'Number'
 }
+
+const number = util.generate(isNumber, 0)
 
 export default number

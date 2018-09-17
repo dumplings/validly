@@ -1,9 +1,9 @@
-import { typeIs } from '../util'
+const util = require('../util')
 
-const isObject = obj => typeIs(obj) === 'Object'
-const object = (obj, defaults) => {
-  if (isObject(obj)) return obj
-  return isObject(defaults) ? defaults : {}
+const isObject = function (obj) {
+  return util.typeIs(obj) === 'Object'
 }
+
+const object = util.generate(isObject, {})
 
 export default object

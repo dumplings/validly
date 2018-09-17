@@ -1,9 +1,9 @@
-import { typeIs } from '../util'
+const util = require('../util')
 
-const isString = str => typeIs(str) === 'String'
-const string = (str, defaults) => {
-  if (isString(str)) return str
-  return isString(defaults) ? defaults : ''
+const isString = function (str) {
+  return util.typeIs(str) === 'String'
 }
+
+const string = util.generate(isString, '')
 
 export default string

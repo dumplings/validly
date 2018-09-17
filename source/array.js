@@ -1,9 +1,9 @@
-import { typeIs } from '../util'
+const util = require('../util')
 
-const isArray = arr => typeIs(arr) === 'Array'
-const array = (arr, defaults) => {
-  if (isArray(arr)) return arr
-  return isArray(defaults) ? defaults : []
+const isArray = function (arr) {
+  return util.typeIs(arr) === 'Array'
 }
+
+const array = util.generate(isArray, [])
 
 export default array
