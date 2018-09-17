@@ -1,0 +1,24 @@
+{
+  "name": "@dumplings/validify",
+  "version": "0.0.1",
+  "description": "todo",
+  "main": "index.js",
+  "scripts": {
+    "standard": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dumplings/validify.git"
+  },
+  "author": "dumplings <dumplings0415@gmail.com> (https://github.com/dumplings)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dumplings/validify/issues"
+  },
+  "homepage": "https://github.com/dumplings/validify#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "*",
+    "tape": "*"
+  }
+}
