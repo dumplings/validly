@@ -1,7 +1,7 @@
-const number = require('./source/number')
-const array = require('./source/array')
-const object = require('./source/object')
-const string = require('./source/string')
+const number = require('./lib/number')
+const array = require('./lib/array')
+const object = require('./lib/object')
+const string = require('./lib/string')
 
 module.exports = {
   number: number,
