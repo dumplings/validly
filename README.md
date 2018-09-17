@@ -1,2 +1,2 @@
-# validify
+# validly
 todo

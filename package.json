@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dumplings/validify.git"
+    "url": "git+https://github.com/dumplings/validly.git"
   },
   "author": "dumplings <dumplings0415@gmail.com> (https://github.com/dumplings)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dumplings/validify/issues"
+    "url": "https://github.com/dumplings/validly/issues"
   },
-  "homepage": "https://github.com/dumplings/validify#readme",
+  "homepage": "https://github.com/dumplings/validly#readme",
   "dependencies": {},
   "devDependencies": {
     "standard": "*",
