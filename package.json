@@ -12,6 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/dumplings/validly.git"
   },
+  "keywords": [
+    "validly",
+    "is not a function",
+    "Cannot read property",
+    "of undefined"
+  ],
   "author": "dumplings <dumplings0415@gmail.com> (https://github.com/dumplings)",
   "license": "MIT",
   "bugs": {
