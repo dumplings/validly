@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "standard": "standard --fix",
-    "test": "tape test/index.js"
+    "test": "tape test/index.js",
+    "build": "babel src --out-dir lib && npm run standard"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,13 @@
     "url": "https://github.com/dumplings/validly/issues"
   },
   "homepage": "https://github.com/dumplings/validly#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/polyfill": "7.0.0"
+  },
   "devDependencies": {
+    "@babel/cli": "7.1.0",
+    "@babel/core": "7.1.0",
+    "@babel/preset-env": "7.1.0",
     "standard": "*",
     "tape": "*"
   }
