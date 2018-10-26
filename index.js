@@ -1,23 +1,11 @@
+const typeIs = require('./lib/util').typeIs
+
 const STRING = ''
 const NUMBER = 0
 const OBJECT = {}
 const ARRAY = []
-const FUNCTION = function () {
-}
+const FUNCTION = function () {}
 const DATE = new Date()
-
-// filter NaN && Infinity
-function isNotValidNumber (target) {
-  return target - target !== 0
-}
-
-function typeIs (target) {
-  let type = Object.prototype.toString.call(target).slice(8, -1)
-  if (type === 'Number' && isNotValidNumber(target)) {
-    return 'Not_Valid_Number'
-  }
-  return type
-}
 
 function generate (type, defaults) {
   return function (value, innerDefaults) {
