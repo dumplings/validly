@@ -4,6 +4,7 @@
   "description": "todo",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm run standard && npm run test",
     "standard": "standard --fix",
     "test": "tape test/index.js"
   },
