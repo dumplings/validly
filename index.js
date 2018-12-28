@@ -32,5 +32,5 @@ module.exports = {
   number: number,
   array: array,
   object: object,
-  string: string,
+  string: string
 }
