@@ -1,11 +1,14 @@
-const typeIs = require('./lib/util').typeIs
+function isNotValidNumber (target) {
+  return target - target !== 0
+}
 
-const STRING = ''
-const NUMBER = 0
-const OBJECT = {}
-const ARRAY = []
-const FUNCTION = function () {}
-const DATE = new Date()
+function typeIs (target) {
+  let type = Object.prototype.toString.call(target).slice(8, -1)
+  if (type === 'Number' && isNotValidNumber(target)) {
+    return 'Not_Valid_Number'
+  }
+  return type
+}
 
 function generate (type, defaults) {
   return function (value, innerDefaults) {
@@ -20,18 +23,14 @@ function generate (type, defaults) {
   }
 }
 
-const number = generate('Number', NUMBER)
-const array = generate('Array', ARRAY)
-const object = generate('Object', OBJECT)
-const string = generate('String', STRING)
-const func = generate('Function', FUNCTION)
-const date = generate('Date', DATE)
+const number = generate('Number', 0)
+const array = generate('Array', [])
+const object = generate('Object', {})
+const string = generate('String', '')
 
 module.exports = {
   number: number,
   array: array,
   object: object,
   string: string,
-  func: func,
-  date: date
 }
