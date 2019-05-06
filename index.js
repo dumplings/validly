@@ -23,14 +23,14 @@ function generate (type, defaults) {
   }
 }
 
-const number = generate('Number', 0)
-const array = generate('Array', [])
-const object = generate('Object', {})
-const string = generate('String', '')
+const getArray = generate('Array', [])
+const getNumber = generate('Number', 0)
+const getObject = generate('Object', {})
+const getString = generate('String', '')
 
 module.exports = {
-  number: number,
-  array: array,
-  object: object,
-  string: string
+  getArray: getArray,
+  getNumber: getNumber,
+  getObject: getObject,
+  getString: getString
 }
