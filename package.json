@@ -1,7 +1,7 @@
 {
   "name": "@dumplings/validly",
   "version": "1.0.1",
-  "description": "todo",
+  "description": "make sure the data type is what you want.",
   "main": "index.js",
   "scripts": {
     "prepare": "npm run standard && npm run test",
