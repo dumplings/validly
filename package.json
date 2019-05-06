@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "make sure the data type is what you want.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "prepare": "npm run standard && npm run test",
     "standard": "standard --fix",
