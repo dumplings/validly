@@ -12,15 +12,16 @@ npm install @dumplings/validly
 # 使用
 
 ```javascript 1.8
-import { array, number, string } from '@dumplings/validly';
+import { getArray, getNumber, getString } from '@dumplings/validly';
 
-const arr = array(12312).map(x => x);
+const arr = getArray(12312).map(x => x);
 console.log(arr); // []
 
-const calc = x => number(x, 20) + 1;
+const calc = x => getNumber(x, 20) + 1;
 
 calc(); // 21
 calc(2);  // 3
 ```
 
-# TODO
+# LICENSE
+[MIT](https://github.com/dumplings/validly/blob/master/LICENSE)
